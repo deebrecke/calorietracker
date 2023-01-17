@@ -1,0 +1,65 @@
+<!--
+Markup page for calorie tracker webpage
+Author: Dee Brecke (w/starter code from Josh Archer)
+Date: 1/24/2022
+file: exercise.html
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calorie tracker!</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="switch.js"></script>
+    </head>
+    <body>
+        <main>
+            <section id="weight_box">
+                <h1>Weight Conversion</h1>
+                <div class="control-group">
+                    <label>Weight in lbs</label>
+                    <input type="text" id="lbs">
+                </div>
+                <button id="lbs-to-kgs">Convert to kgs</button>
+            </section>
+            <section>
+                <h1>Workout METs</h1>
+                <div class="control-group">
+                    <label>Workout type</label>
+                    <select id="workouts">
+                        <option value = "yard">Light Yard Work</option>
+                        <option value = "walk">Walking 3-4 mph</option>
+                        <option value ="vacuum">Vacuuming</option>
+                        <option value ="dance">Dancing</option>
+                        <option value ="hike">Hiking</option>
+                        <option value ="beat">Playing Beat Saber</option>
+                        <option value = "jog">Jogging</option>
+                        <option value ="back">Backpacking</option>
+                    </select>
+                </div>
+                <button id="workout-to-met">Convert to MET</button>
+            </section>
+            <section>
+                <h1>Calories burned per minute</h1>
+                <div class="control-group">
+                    <label>MET</label>
+                    <input type="text" id="met">
+                </div>
+                <div class="control-group">
+                    <label>Weight in kg</label>
+                    <input type="text" id="kgs">
+                </div>
+                <button id="calc-calories">Calculate calories</button>
+            </section>
+            <img src="colories.png" alt="">
+        </main>
+        <aside>
+            <textarea id="console"></textarea>
+        </aside>
+        <script src="switch.js"></script>
+<!--    <script src="script.js"></script> this was my first attempt.
+        It worked, but the switch statement seemed like a cleaner approach    -->
+    </body>
+</html>
+

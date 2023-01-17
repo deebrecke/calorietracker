@@ -1,0 +1,66 @@
+/*
+Style page to look like example
+Author: Dee Brecke
+Date: 1/24/2022
+file: styles.css
+*/
+
+/*basic page setup*/
+body{
+    width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background-color: #b2c3dc;
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    margin: 15px;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+/* add border boxes to right side and style*/
+section{
+    border: 2px solid #4a619b;
+    margin: 10px;
+    padding: 10px 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/*style right side output console*/
+#console{
+    margin: 30px;
+    background-color: #f5fbef;
+    padding: 10px 10px;
+    border: 1px solid black;
+    width: 95%;
+    height: 100%;
+}
+
+/*style conversion buttons*/
+button{
+    background-color: #b6b9d2;
+    border-radius: 5px;
+    padding: 3px;
+    margin-top: 8px;
+}
+
+/*style input boxes*/
+#lbs, #workouts, #met, #kgs{
+    background-color: beige;
+    margin: 5px;
+    border-radius: 3px;
+    width: 200px;
+}
+/* Thank you, Josh, for helping me with this!*/
+label{
+    text-align: left;
+    width: 110px;
+    display: inline-block;
+}
